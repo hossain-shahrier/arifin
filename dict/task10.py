@@ -1,7 +1,7 @@
 my_dict = {'sci fi': 5, 'mystery': 3, 'horror': 14, 'young_adult': 2, 'adventure':9}
 
 
-max_value = -1
+max_value = 14
 max_key = None
 
 for key, value in my_dict.items():
