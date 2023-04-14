@@ -14,6 +14,7 @@ for color in color_sequence:
         blue_count += 1
 
 color_choices = []
+# [("Red",4),("Green,3)...]
 if red_count >= 1:
     color_choices.append(("Red", red_count))
 if green_count >= 1:

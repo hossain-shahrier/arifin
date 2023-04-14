@@ -1,24 +1,19 @@
-color_sequence = input("Enter the color sequence (R for Red, G for Green, B for Blue): ")
+dict1 = {'w': 50, 'y': 'Green', 'a': 300, 'z': 400}
+dict2 = {'y': 'Red', 'a': 200, 'b': 4, 'z': 600}
 
-red_count = 0
-green_count = 0
-blue_count = 0
+new_dict = {
 
-for color in color_sequence:
-    if color == "R":
-        red_count += 1
-    elif color == "G":
-        green_count += 1
-    elif color == "B":
-        blue_count += 1
+}
+for key in dict1:
+    if key in dict2:
+        new_dict[key] = [dict1[key], dict2[key]]
+    #     new_dict['y'] = ['Green','Red']
+    else:
+        new_dict[key] = [dict1[key]]
+#         new_dict['w'] = [dict1['w']]
 
-color_choices = []
-if red_count >= 1:
-    color_choices.append(("Red", red_count))
-if green_count >= 1:
-    color_choices.append(("Green", green_count))
-if blue_count >= 1:
-    color_choices.append(("Blue", blue_count))
+for key in dict2:
+    if key not in new_dict:
+        new_dict[key] = [dict2[key]]
 
-# print the result
-print(tuple(color_choices))
+print(new_dict)

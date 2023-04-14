@@ -1,5 +1,11 @@
-given_dict = {"Normal Skills": [10, 10, 10], "Ultimate Skill": 30}
+given_dict = {
+    "Normal Skills": [10, 10, 10],
+    "Ultimate Skill": 30
+}
 additive_damage_score = sum(given_dict["Normal Skills"]) + given_dict["Ultimate Skill"]
+
+# given_dict["Normal Skills"] = [10,10,10]
+# given_dict["Ultimate Skill"] = 30
 
 if additive_damage_score <= 70:
     agent_name = "Rage"
